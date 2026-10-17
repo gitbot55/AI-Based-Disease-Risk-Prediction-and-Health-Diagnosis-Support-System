@@ -1,0 +1,75 @@
+﻿# Secrets and environment variables
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python virtual environments
+.venv/
+.venv*/
+venv/
+env/
+**/venv/
+**/venv*/
+**/env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python testing and tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+**/logs/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Frontend dependencies and build output
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.output/
+Frontend/.wrangler/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary archives
+*.zip
+
+# Alternate backend kept locally as a backup
+/backend copy/
+
+# Old empty Git metadata backup
+/.git-empty-backup/
+
+# Dataset files - exclude until redistribution permissions are confirmed
+/backend/dataset/*.csv
+
+# Generated training logs
+/backend/ml/train/catboost_info/
+
+# SQLite temporary files
+/backend/database/*.db-shm
+/backend/database/*.db-wal
+
+# Generated training logs
+/backend/ml/train/catboost_info/
+
+# Generated QA output
+/backend/qa_output.txt
+/backend/qa_validation_report.json
